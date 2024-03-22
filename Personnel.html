@@ -1,78 +1,54 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projet Personnel - Gestion des Ligues</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 20px;
-            text-align: center;
-        }
-        h1 {
-            margin-top: 20px;
-            text-align: center;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 0 20px;
-        }
-        .image-container {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 20px;
-        }
-        .image-container img {
-            max-width: 30%;
-            margin-bottom: 20px;
-        }
-    </style>
-</head>
-<body>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="Style.css" />
+		<title>
+			Portfolio
+		</title>
+	</head>
+	<body>
+		<nav>
+			<ul>
+                <li><a href="Index.html">Accueil</a></li>
+				<li><a href="Projets.html">Mes projets</a></li>
+                <li><a href="experiences.html">Mes experiences</a></li>
+                <li><a href="veille.html">Veille</a></li>
+				<li><a href="Cv.html">Curriculum Vitae</a></li>
+			</ul>			
+		</nav>
+		<section class="page-content">
+			<header>
+				<div class="project">
+                    			<h1>Personnel</h1>
+                    				<h2 class="description">
+										Personnel est un projet d'application en Java effectué lors de ma deuxiéme anné de BTS.
+                                        Celle ci Permet de gerer des Ligues ainsi que leurs membres en fournissant des droits a des administrateurs de ligue dans le contexte de de la M2L. 
+									</h2>
+									<h2>Objectif</h2>
+									<h3>Cette application, n’existe qu’en ligne de commande et est mono-utilisateur. Nous devions désigner un administrateur par ligue et lui confier la tâche de recenser les employés de sa ligue. Une partie du travail est déjà faite mais nous avons du le compléter.
+									</h3>
+                                    <h2>Specification du besoin</h2>
+                                    <ul><li> Un simple employé de ligue peut ouvrir l’application et s’en servir comme un annuaire, mais il ne dispose d’aucun droit d’écriture.</li>
 
-<header>
-    <h1>Projet Personnel - Gestion des Ligues</h1>
-</header>
+                                         <li>Un employé par ligue est admininstrateur et dispose de droits d’écriture peut gérer la liste des emloyés de sa propre ligue avec une application bureau.
+                                        </li>
+                                        <li>Le super-admininstrateur a accès en écriture à tous les employés des ligues. Il peut aussi gérer les comptes des administrateurs des ligues avec une application accessible en ligne de commande.
+                                        </li>Le super-admininstrateur a accès en écriture à tous les employés des ligues. Il peut aussi gérer les comptes des administrateurs des ligues avec une application accessible en ligne de commande.
 
-<div class="container">
-    <p>Bienvenue sur la page de présentation de notre projet "Personnel" dédié à la gestion des employés dans des ligues.</p>
+                                        <li>L’application doit être rendue multi-utilisateurs grace à l’utilisation d’une base de données.</li>
+                                    </ul>
 
-    <h2>Description du Projet</h2>
-    <p>Notre projet vise à simplifier la gestion du personnel au sein de différentes ligues. Nous offrons des fonctionnalités avancées pour suivre les informations des employés, leur performance, les équipes auxquelles ils sont assignés, etc.</p>
+									<section class="tableau-img">
+										<img src="ImageGoogleAlerte.JPG"/>
+									</section>
+									<h3>L'intelligence artificielle (IA) représente une discipline informatique passionnante qui vise à créer des systèmes capables de réaliser des tâches qui nécessitent généralement l'intelligence humaine. 
+										Elle englobe un large éventail de techniques et d'applications, transformant la manière dont nous interagissons avec la technologie au quotidien.</h3>
+                    				<a href="IA.docx" data-insertor-excluded="1">Veille-Technologque.pdf</a>
+                    				
+                </div>
+			</header>
+		</section>
 
-    <h2>Images du Projet</h2>
-    <div class="image-container">
-        <img src="placeholder1.jpg" alt="Image 1">
-        <img src="placeholder2.jpg" alt="Image 2">
-        <img src="placeholder3.jpg" alt="Image 3">
-    </div>
-
-    <h2>Fonctionnalités Principales</h2>
-    <ul>
-        <li>Gestion des informations personnelles des employés</li>
-        <li>Suivi de la performance individuelle</li>
-        <li>Affectation des employés aux équipes et aux projets</li>
-        <li>Génération de rapports personnalisés</li>
-    </ul>
-
-    <h2>Technologies Utilisées</h2>
-    <p>Pour ce projet, nous utilisons diverses technologies, notamment :</p>
-    <ul>
-        <li>HTML5 et CSS3 pour la conception de l'interface utilisateur</li>
-        <li>JavaScript pour la logique de gestion côté client</li>
-        <li>PHP pour la gestion des données côté serveur</li>
-        <li>MySQL pour la base de données</li>
-    </ul>
-</div>
-
-</body>
-</html>
+	</body>
