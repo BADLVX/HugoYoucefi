@@ -1,0 +1,49 @@
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="Style.css" />
+		<title>
+			Portfolio
+		</title>
+	</head>
+	<body>
+		<nav>
+			<ul>
+				<li><a href="Index.html">Accueil</a></li>
+				<li><a href="Projets.html">Mes projets</a></li>
+                <li><a href="experiences.html">Mes experiences</a></li>
+                <li><a href="veille.html">Veille</a></li>
+				<li><a href="Cv.html">Curriculum Vitae</a></li>
+			</ul>			
+		</nav>
+            <center><h1>ServiceJour</h1></center>
+            <h1>Description</h1>
+            <h2>Le fichier batch `serviceJour.bat` offre une interface simple en ligne de commande permettant à l'utilisateur de choisir entre afficher l'heure du moment, afficher la date du moment, ou quitter le programme. Il peut effectuer ces actions de manière indépendante, permettant à l'utilisateur de choisir de ne pas afficher l'heure et d'avoir la date, ou de tout afficher.</h2>
+            <h2>Option du menu :</h2>
+            <ul>
+                <li style="font-size: 20px;" >L'option 1 affiche l'heure actuelle. Le programme utilise la commande `time /t` pour afficher l'heure, met en pause le script pour permettre à l'utilisateur de voir l'heure puis retourne au menu principal.</li>
+                <li style="font-size: 20px;">l'option 2 permet d'afficher la date actuelle. le porgramme utilise la commande `date /t` pour afficher la date puis pause le script pour permettre à l'utilisateur de voir la date et retourne au menu principal.</li>
+                <li style="font-size: 20px;">l'option 3 permet de quitter le programme en Affichant un message de départ. Cela utilise la commande `exit /b 0` pour arreter le script.</li>
+            </ul>
+
+            <h2>Utilisation</h2>
+            <ul><li>1. Double-cliquez sur le fichier `serviceJour.bat` pour l'exécuter.</li>
+                <li>2. Choisissez l'option correspondante en entrant le numéro associé.</li>
+                <li>3. Suivez les instructions à l'écran.</li>
+                <li>4. Répétez le processus ou choisissez l'option pour quitter.</li>
+            </ul>
+
+            <h2>Remarques</h2>
+            <ul>
+                <li>Les commandes `time /t` et `date /t` sont utilisées pour afficher l'heure et la date respectivement.</li>
+                <li>Le script utilise `set /p` pour permettre à l'utilisateur de saisir son choix.</li>
+                <li>En cas de choix invalide, le script affiche un message et retourne au menu principal</li>
+            </ul>
+            <h2>Vous trouverez le script et la documentation dans le repository github en cliquant <a href="https://github.com/BADLVX/ServiceJour">ici</a></h2>
+
+
+
+
+    </body>

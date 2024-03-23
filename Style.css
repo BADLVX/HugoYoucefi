@@ -4,7 +4,7 @@ body {
 	font-family: 'Noto Sans JP', sans-serif;
 	padding: 0 2%;
 	margin: 0;
-    background-image: url('DALL·E\ 2023-12-20\ 20.32.20\ -\ Ciel\ violet\ un\ peu\ sombre.png');
+    background-image: url('fond.png');
     background-size: cover;
 }
 
@@ -186,4 +186,5 @@ footer .colonne p:hover {
 	footer .column {
 		width: 80%;
 	}
+
 }

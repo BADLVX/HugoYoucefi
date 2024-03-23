@@ -1,54 +1,110 @@
+<!DOCTYPE html>
 <html lang="fr">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="Style.css" />
-		<title>
-			Portfolio
-		</title>
-	</head>
-	<body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Présentation de mon projet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0,2;
+            background-image: url('fond.png');
+            background-size: cover;
+        }
+        .container {
+            max-width: 1500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #6c2f9b;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-size: cover;
+            background-image: url('fond.png');
+        }
+        h1 {
+            text-align: center;
+            font-size: 100px;
+        }
+        h2{
+            text-align: center;
+            font-size: 40px;
+            text-decoration: underline;
+        }
+        h3 {
+            font-size: 25px;
+            text-decoration: underline;
+        }
+        p {
+            margin-bottom: 20px;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        ul {
+            font-size: 25px;
+            font-weight: bold;
+        }
+        a  {
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
 		<nav>
 			<ul>
-                <li><a href="Index.html">Accueil</a></li>
-				<li><a href="Projets.html">Mes projets</a></li>
-                <li><a href="experiences.html">Mes experiences</a></li>
-                <li><a href="veille.html">Veille</a></li>
-				<li><a href="Cv.html">Curriculum Vitae</a></li>
+				<li><a href="Index.html" style="color: black;">Accueil</a></li>
+				<li><a href="Projets.html" style="color: black;">Mes projets</a></li>
+                <li><a href="experiences.html" style="color: black;">Mes experiences</a></li>
+                <li><a href="veille.html" style="color: black;">Veille</a></li>
+				<li><a href="Cv.html" style="color: black;">Curriculum Vitae</a></li>
 			</ul>			
 		</nav>
-		<section class="page-content">
-			<header>
-				<div class="project">
-                    			<h1>Personnel</h1>
-                    				<h2 class="description">
-										Personnel est un projet d'application en Java effectué lors de ma deuxiéme anné de BTS.
-                                        Celle ci Permet de gerer des Ligues ainsi que leurs membres en fournissant des droits a des administrateurs de ligue dans le contexte de de la M2L. 
-									</h2>
-									<h2>Objectif</h2>
-									<h3>Cette application, n’existe qu’en ligne de commande et est mono-utilisateur. Nous devions désigner un administrateur par ligue et lui confier la tâche de recenser les employés de sa ligue. Une partie du travail est déjà faite mais nous avons du le compléter.
-									</h3>
-                                    <h2>Specification du besoin</h2>
-                                    <ul><li> Un simple employé de ligue peut ouvrir l’application et s’en servir comme un annuaire, mais il ne dispose d’aucun droit d’écriture.</li>
+    <div>
+        <h1>Personnel</h1>
+        <h2>Description</h2>
+        <p>Personnel est un projet d'application en Java effectué lors de ma deuxiéme anné de BTS.Celle ci Permet de gerer des Ligues ainsi que leurs membres en fournissant des droits a des administrateurs de ligue dans le contexte de de la M2L. </p>
+        
+        <h2>Objectif</h2>
+        <p>Cette application, n’existe qu’en ligne de commande et est mono-utilisateur. Nous devions désigner un administrateur par ligue et lui confier la tâche de recenser les employés de sa ligue. Une partie du travail est déjà faite mais nous avons du le compléter.</p>
+        
+        <h2>Spécification du besoin</h2>
+        <ul>
+            <li>Un simple employé de ligue peut ouvrir l’application et s’en servir comme un annuaire, mais il ne dispose d’aucun droit d’écriture.</li>
+            <li>Un employé par ligue est admininstrateur et dispose de droits d’écriture peut gérer la liste des emloyés de sa propre ligue avec une application bureau.</li>
+            <li>Le super-admininstrateur a accès en écriture à tous les employés des ligues. Il peut aussi gérer les comptes des administrateurs des ligues avec une application accessible en ligne de commande.</li>
+        </ul>
+        
+        <h2>Travail effectué</h2>
+        <div class = "container">
+            <h3>Creation de la base de données :</h3>
+            <p>Premierement nous avons du concevoir puis creer la base de données, nous avons utilisé looping pour creer le MCD et MYSQL pour creer la Base</p>
+            <img src="MCD.JPG" alt="Image 4">
+            <img src="ScriptCreateTable.JPG" alt="Image 4">
+        <p>Via java nous avons connecter l'application a notre base de données</p>
+        <img src="Credentials.JPG" alt="Image 4">
+        <p>Nous avons ensuite utilisé la class JDBC pour transmettre les requetes sql de l'application a la base</p>
+        <img src="JDBC.JPG" alt="Image 4">
+    </div>
 
-                                         <li>Un employé par ligue est admininstrateur et dispose de droits d’écriture peut gérer la liste des emloyés de sa propre ligue avec une application bureau.
-                                        </li>
-                                        <li>Le super-admininstrateur a accès en écriture à tous les employés des ligues. Il peut aussi gérer les comptes des administrateurs des ligues avec une application accessible en ligne de commande.
-                                        </li>Le super-admininstrateur a accès en écriture à tous les employés des ligues. Il peut aussi gérer les comptes des administrateurs des ligues avec une application accessible en ligne de commande.
-
-                                        <li>L’application doit être rendue multi-utilisateurs grace à l’utilisation d’une base de données.</li>
-                                    </ul>
-
-									<section class="tableau-img">
-										<img src="ImageGoogleAlerte.JPG"/>
-									</section>
-									<h3>L'intelligence artificielle (IA) représente une discipline informatique passionnante qui vise à créer des systèmes capables de réaliser des tâches qui nécessitent généralement l'intelligence humaine. 
-										Elle englobe un large éventail de techniques et d'applications, transformant la manière dont nous interagissons avec la technologie au quotidien.</h3>
-                    				<a href="IA.docx" data-insertor-excluded="1">Veille-Technologque.pdf</a>
-                    				
-                </div>
-			</header>
-		</section>
-
-	</body>
+    <div class ="container">
+        <h3>Amelioration de l'application</h3>
+        <p>Nous avons par la suite commencé a apporté differentes modification au code de l'application, pour y rajouter des elements necessaire.</p>
+        <p>Par exemple : Nous avons ajouté un constructeur a la class employe dans laquelle nous avons rajouté les date d’arrivée et de depart au format compris par MYSQL d’un employe. Ainsi que l'ajout d'exception</p>
+        <img src="Constructeur.JPG" alt="Image 5">
+        <p>Si vous voulez en savoir plus consulter la documentation : </p>  <strong><a href="Documentation Du projet Personnel.docx" data-insertor-excluded="1">DocPersonnel.pdf</a></strong>
+        <p>Vous pouvez aussi acceder au repository github du porjet en cliquant <a href="https://github.com/BADLVX/personnel" style="color: blue;" data-insertor-excluded="1">ici</a></p>
+    </div>
+        
+        <!-- Ajoutez autant de sections de travail que nécessaire -->
+        
+    </div>
+</body>
+</html>
