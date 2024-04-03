@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Présentation de mon projet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0,2;
+            background-image: url('fond.png');
+            background-size: cover;
+        }
+        .container {
+            max-width: 1500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #6c2f9b;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-size: cover;
+            background-image: url('fond.png');
+        }
+        h1 {
+            text-align: center;
+            font-size: 100px;
+        }
+        h2{
+            text-align: center;
+            font-size: 40px;
+            text-decoration: underline;
+        }
+        h3 {
+            font-size: 25px;
+            text-decoration: underline;
+        }
+        p {
+            margin-bottom: 20px;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        ul {
+            font-size: 25px;
+            font-weight: bold;
+        }
+        a  {
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+		<nav>
+			<ul>
+				<li><a href="Index.html" style="color: black;">Accueil</a></li>
+				<li><a href="Projets.html" style="color: black;">Mes projets</a></li>
+                <li><a href="experiences.html" style="color: black;">Mes expériences</a></li>
+                <li><a href="veille.html" style="color: black;">Veille</a></li>
+				<li><a href="Cv.html" style="color: black;">Curriculum Vitae</a></li>
+			</ul>			
+		</nav>
+    <div>
+        <h1>PEX</h1>
+        <h2>Description</h2>
+        <center><p>Creation d'un nouveau flux de données</p></center>
+        
+        <h2>Objectif</h2>
+        <center><p>Permettre a deux applications de pouvoir échanger des données de maniere fluide et securisée</p></center>
+        <img src="ShemaFlux.JPG" alt="Image 4">
+
+        
+        <h2>Travail effectué</h2>
+        <div class = "container">
+            <h3>Programme java filtrant les balises</h3>
+            <p>Le fichier en entrée est de type file, il passe à la phase suivante grâce à un quartz.
+                On récupère les informations du quartz grâce a ce code qui permet de filtrer le fichiers xml comprenant les balises quartz :
+            </p>
+            <img src="FiltreBaliseJava.JPG" alt="Image 4">
+            <img src="FiltreBaliseJava2.JPG" alt="Image 4">
+    </div>
+
+    <div class ="container">
+        <h3> Puis on copie les balises quartz récupérer dans un autre fichier :</h3>
+        <img src="CopieBalise.JPG" alt="Image 5">
+        <img src="CopieBalise2.JPG" alt="Image 5">
+        <p>Tout les details sur comment fonctionne le flux se trouve ici : </p>  <strong><a href="DocFLux.pdf" data-insertor-excluded="1">Documentation_Base_Statistique.pptx</a></strong>
+</body>
+</html>

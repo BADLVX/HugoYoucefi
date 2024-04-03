@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Présentation de mon projet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0,2;
+            background-image: url('fond.png');
+            background-size: cover;
+        }
+        .container {
+            max-width: 1500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #6c2f9b;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-size: cover;
+            background-image: url('fond.png');
+        }
+        h1 {
+            text-align: center;
+            font-size: 100px;
+        }
+        h2{
+            text-align: center;
+            font-size: 40px;
+            text-decoration: underline;
+        }
+        h3 {
+            font-size: 25px;
+            text-decoration: underline;
+        }
+        p {
+            margin-bottom: 20px;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        ul {
+            font-size: 25px;
+            font-weight: bold;
+        }
+        a  {
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+		<nav>
+			<ul>
+				<li><a href="Index.html" style="color: black;">Accueil</a></li>
+				<li><a href="Projets.html" style="color: black;">Mes projets</a></li>
+                <li><a href="experiences.html" style="color: black;">Mes expériences</a></li>
+                <li><a href="veille.html" style="color: black;">Veille</a></li>
+				<li><a href="Cv.html" style="color: black;">Curriculum Vitae</a></li>
+			</ul>			
+		</nav>
+    <div>
+        <h1>Personnel</h1>
+        <h2>Description</h2>
+        <center><p>Il s'agit d'une base de donnée dans laquelle vas etre stocké les traces recuperer de la base de production </p></center>
+        
+        <h2>Objectif</h2>
+        <center><p>Pouvoir récupérer les informations contenue dans la PEX_TRC et les stocker dans la base Statistique. Dans le cas où des données n’ont pas été synchronisées, il faut prévoir un mécanisme de rattrapage.</p></center>
+        
+        <h2>Spécification du besoin</h2>
+        <ul>
+            <li>Récupérer le Delta plusieurs fois par jour sur la BDD du schéma PEX_TRC de PROD et l'insérer sur la BDD STATISTIQUE​. Dans le cas où des données n’ont pas été synchronisées, il faut prévoir un mécanisme de rattrapage.​</li>
+        </ul>
+        
+        <h2>Travail effectué</h2>
+        <div class = "container">
+            <h3>Création des script</h3>
+            <p>J'ai du créer les script permettant de recuperer les données stocké dans les differentes tables de la base PEX_TRC</p>
+            <img src="ScriptBaseStatistique.JPG" alt="Image 4">
+    </div>
+
+    <div class ="container">
+        <h3>Script CSV</h3>
+        <p>Mes requetes SQL ont ensuite été implementé dans un script csv suivant un algorithm</p>
+        <img src="Algo_BaseStatistique.JPG" alt="Image 5">
+        <p>Si vous voulez en savoir plus, consultez la documentation : </p>  <strong><a href="BASE_STATISTIQUES_170523MAJ (2).pptx" data-insertor-excluded="1">Documentation_Base_Statistique.pptx</a></strong>
+</body>
+</html>
