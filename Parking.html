@@ -1,22 +1,115 @@
+<!DOCTYPE html>
 <html lang="fr">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="Style.css" />
-		<title>
-			Portfolio
-		</title>
-	</head>
-	<body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Présentation de mon projet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0,2;
+            background-image: url('fond.png');
+            background-size: cover;
+        }
+        .container {
+            max-width: 1500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #6c2f9b;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-size: cover;
+            background-image: url('fond.png');
+        }
+        h1 {
+            text-align: center;
+            font-size: 100px;
+        }
+        h2{
+            text-align: center;
+            font-size: 40px;
+            text-decoration: underline;
+        }
+        h3 {
+            font-size: 25px;
+            text-decoration: underline;
+        }
+        p {
+            margin-bottom: 20px;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        ul {
+            font-size: 25px;
+            font-weight: bold;
+        }
+        a  {
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
 		<nav>
 			<ul>
-				<li><a href="Index.html">Accueil</a></li>
-				<li><a href="Projets.html">Mes projets</a></li>
-                <li><a href="experiences.html">Mes expériences</a></li>
-                <li><a href="veille.html">Veille</a></li>
-				<li><a href="Cv.html">Curriculum Vitae</a></li>
+				<li><a href="Index.html" style="color: black;">Accueil</a></li>
+				<li><a href="Projets.html" style="color: black;">Mes projets</a></li>
+                <li><a href="experiences.html" style="color: black;">Mes expériences</a></li>
+                <li><a href="veille.html" style="color: black;">Veille</a></li>
+				<li><a href="Cv.html" style="color: black;">Curriculum Vitae</a></li>
 			</ul>			
 		</nav>
-        <h1>En Cours...</h1>
-    </body>
+    <div>
+        <h1>Parking</h1>
+        <h2>Description</h2>
+        <center><p>Parking est un projet d'application web en php utilisant le framework laravel </p></center>
+        
+        <h2>Objectif</h2>
+        <center><p>L'objectif et de pouvoir fournir un service de reservation de place de parking en ligne</p></center>
+        
+        <h2>Spécification du besoin</h2>
+        <ul>
+            <li>Le front-office doit être sécurisé et n’accepter que les demandes du personnel des ligues. Les inscriptions au service de réservation de place doivent être validées (ou créées) par un administrateur.</li>
+            <li>L’administrateur, seul utilisateur du back-office, doit pouvoir éditer la liste des places et gérer les inscriptions des utilisateurs.</li>
+            <li>Lorsqu’un utilisateur en fait la demande, une place libre lui est est attribuée aléatoirement et immédiatement par l’application, la réservation expire automatiquement au bout d’une durée par défaut déterminée par l’administrateur.</li>
+			<li>Si une demande ne peut pas être satisfaite, l’utilisateur est placé en liste d’attente.</li>
+			<li>L’utilisateur ne peut pas choisir la date à laquelle une place lui est attribué, les réservations sont toujours immédiates. Un utilisateur ne peut pas faire une demande de réservation s’il est en file d’attente ou qu’il occupe une place.</li>
+			<li>Un utilisateur ou l’administateur peuvent fermer une réservation avant la date d’expiration prévue. Une fois celle-ci expirée, l’utilisateur doit refaire une demande s’il souhaite obtenir une place.</li>
+
+        </ul>
+        
+        <h2>Travail effectué</h2>
+        <div class = "container">
+            <h3>Création de la base de données :</h3>
+            <p>Premièrement nous avons dû concevoir puis créer la base de données, nous avons utilisé looping pour créer le MCD et MYSQL pour créer la Base.</p>
+            <img src="MCD_Parking.JPG" alt="Image 4">
+            <img src="CreationTable_Parking.JPG" alt="Image 4">
+			<img src="Contraintes_Parking.JPG" alt="Image 4">
+        <h3>Migrations :</h3>
+        <img src="Credentials.JPG" alt="Image 4">
+        <p>Grace a laravel nous avons crée des migrations de nos tables pour pouvoir interragir avec</p>
+        <img src="Migration_User.JPG" alt="Image 4">
+    </div>
+
+    <div class ="container">
+        <h3>Creation des routes</h3>
+        <p>Nous avons ensuite crée des routes permettant a l'application d'acceder a differentes views</p>
+        <img src="Routes_Parking.JPG" alt="Image 5">
+    </div>
+	<div class ="container">
+        <h3>Les vues :</h3>
+        <p>Il s'agit de ce qui va etres affiché sur la page</p>
+        <img src="View.png" alt="Image 5">
+    </div>
+	<p>Vous trouverez plus de details ici </p>  <strong><a href="Documentation_Projet_Parking.pdf" data-insertor-excluded="1">DocParking.pdf</a></strong>
+        <p>Vous pouvez aussi accéder au repository github du projet en cliquant <a href="https://github.com/BADLVX/Parking" style="color: blue;" data-insertor-excluded="1">ici</a></p>
+</body>
+</html>
